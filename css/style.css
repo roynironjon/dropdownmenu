@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.top-header{
+    background: #222629;
+}
+.top-header .main-column{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.top-header .main-column .logo-column{
+    width: 25%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.top-header .main-column .logo-column .bar i{
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.top-header .main-column .logo-column .logo-img img{
+    width: 100%;
+}
+.top-header .main-column .menubar{
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.top-header .main-column .menubar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+/* .top-header .main-column .menubar ul li:last-child{
+    margin-right: 0px;
+} */
+.top-header .main-column .menubar ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+}
+.top-header .main-column .menubar ul li a:hover{
+    color: aqua;
+}
+.top-header .main-column .right-column{
+    width: 5%;
+    text-align: right;
+}
+.top-header .main-column .right-column i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px;
+    transition: .4s;
+}
+.top-header .main-column .right-column i:hover{
+    color: aqua;
+}
+.top-header .main-column .right-column li{
+    list-style: none;
+}
+.top-header .main-column .right-column .main-menu{
+    position: relative;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown {
+	position: absolute;
+	right: 0;
+	background: #dcdcdc;
+	width: 250px;
+	padding-top: 20px;
+	top: 150px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px;
+    transition: .4s;
+}
+.top-header .main-column .right-column .main-menu:hover .contact-dropdown{
+    visibility: visible;
+    opacity: 1;
+    top: 105px;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown li{
+    display: block;
+    text-align: center;
+    list-style: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 35px;
+    text-align: left;
+    padding-left: 90px;
+    font-weight: 600;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .user{
+    position: relative;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .user::after{
+    content: '\f007';
+    position: absolute;
+    left: 55px;
+    font-family: fontawesome;
+    color: #333;
+    cursor: pointer;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .love{
+    position: relative;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .love::after{
+    content: '\f004';
+    position: absolute;
+    left: 55px;
+    font-family: fontawesome;
+    color: #333;
+    cursor: pointer;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .cart{
+    position: relative;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .cart::after{
+    content: '\f291';
+    position: absolute;
+    left: 55px;
+    font-family: fontawesome;
+    color: #333;
+    cursor: pointer;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .setting{
+    position: relative;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .setting::after{
+    content: '\f013';
+    position: absolute;
+    left: 55px;
+    font-family: fontawesome;
+    color: #333;
+    cursor: pointer;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown li a{
+    text-decoration: none;
+    color: #33333391;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown li a i{
+    margin-right: 10px;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .btn{
+    text-align: left;
+    padding-left: 60px;
+    background: #222629;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .btn a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.top-header .main-column .right-column .main-menu .contact-dropdown .btn a i{
+    margin-right: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.top-header .main-column .menubar .main-page .dorpdown-page{
+    position: absolute;
+    left: 0;
+    top: 140%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #dcdcdc;
+    width: 100%;
+    padding: 40px 20px;
+    column-gap: 40px;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.top-header .main-column .menubar .main-page:hover .dorpdown-page{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.top-header .main-column .menubar .main-page .dorpdown-page .flex-page .header{
+    padding-bottom: 20px;
+    margin-top: 40px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 40px;
+}
+.top-header .main-column .menubar .main-page .dorpdown-page .flex-page .header h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.top-header .main-column .menubar .main-page .dorpdown-page .flex-page li{
+    padding: 10px 0px;
+    list-style: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+}
+.top-header .main-column .menubar .main-page .dorpdown-page .flex-page li i{
+    margin-right: 10px;
+    color: #333;
+}
+.top-header .main-column .menubar .main-page .dorpdown-page .flex-page li a{
+    color: #333;
+}
+.top-header .main-column .menubar .main-page .dorpdown-page .flex-page li:hover a{
+    color: aqua;
+}
